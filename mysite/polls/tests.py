@@ -82,7 +82,7 @@ class PollViewTests(TestCase):
         response = self.client.get(reverse('polls:index'))
         self.assertQuerysetEqual(
             response.context['latest_poll_list'],
-            ['<Poll:Past poll 2.>', '<Poll: Past poll 1.>']
+            ['<Poll: Past poll 2.>', '<Poll: Past poll 1.>']
         )
 
 

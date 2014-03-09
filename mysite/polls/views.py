@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.views import generic
-from djangp.utils import timezone
+from django.utils import timezone
 
 
 from polls.models import Choice, Poll
